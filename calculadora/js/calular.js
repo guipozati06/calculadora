@@ -8,7 +8,6 @@ let n1 = '';
 let n2 = '';
 let operacao = null;
 
-// Captura os cliques nos números
 document.querySelectorAll('.num').forEach(btn => {
     btn.onclick = () => {
         // Se não escolheu a operação, preenche o primeiro número, senão o segundo
@@ -22,7 +21,6 @@ document.querySelectorAll('.num').forEach(btn => {
     };
 });
 
-// Captura o clique no operador
 document.querySelectorAll('.op').forEach(btn => {
     btn.onclick = () => {
         if (n1 !== '') operacao = btn.getAttribute('data-type');
@@ -35,7 +33,6 @@ document.getElementById('clear').onclick = () => {
     display.value = '0';
 };
 
-// Botão Igual - Onde as funções do professor entram
 document.getElementById('equal').onclick = () => {
     if (n1 && n2 && operacao) {
         let num1 = Number(n1);
@@ -48,10 +45,10 @@ document.getElementById('equal').onclick = () => {
         if (operacao === 'div')  resultado = tt(num1, num2);
 
         display.value = resultado;
-        
-        // Reseta para o próximo cálculo usando o resultado como base
+
         n1 = resultado.toString();
         n2 = '';
         operacao = null;
     }
+
 };

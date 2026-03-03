@@ -1,0 +1,1 @@
+export const ta = (a, b) => a + b;

@@ -1,0 +1,1 @@
+export const al = (a, b) => a * b;

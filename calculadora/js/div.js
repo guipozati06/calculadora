@@ -1,0 +1,1 @@
+export const tt = (a, b) => b !== 0 ? a / b : "Erro";

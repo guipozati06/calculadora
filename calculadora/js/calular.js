@@ -10,7 +10,7 @@ let operacao = null;
 
 document.querySelectorAll('.num').forEach(btn => {
     btn.onclick = () => {
-        // Se não escolheu a operação, preenche o primeiro número, senão o segundo
+        
         if (!operacao) {
             n1 += btn.innerText;
             display.value = n1;
@@ -51,4 +51,5 @@ document.getElementById('equal').onclick = () => {
     }
 
 };
+
 

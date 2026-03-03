@@ -27,7 +27,6 @@ document.querySelectorAll('.op').forEach(btn => {
     };
 });
 
-// Botão Limpar
 document.getElementById('clear').onclick = () => {
     n1 = ''; n2 = ''; operacao = null;
     display.value = '0';
@@ -52,3 +51,4 @@ document.getElementById('equal').onclick = () => {
     }
 
 };
+

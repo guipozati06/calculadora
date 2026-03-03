@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/polar.css">
+    
+    <script type="module" src="js/calular.js"></script>
+    
+    <title>Calculadora Modular</title>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+
+        <div class="botoes-container">
+            <div class="sete"><button onclick="adicionar('7')">7</button></div>
+            <div class="oito"><button onclick="adicionar('8')">8</button></div>
+            <div class="nove"><button onclick="adicionar('9')">9</button></div>
+            <div class="divisao"><button onclick="adicionar('/')">/</button></div>
+
+            <div class="quatro"><button onclick="adicionar('4')">4</button></div>
+            <div class="cinco"><button onclick="adicionar('5')">5</button></div>
+            <div class="seis"><button onclick="adicionar('6')">6</button></div>
+            <div class="multiplicacao"><button onclick="adicionar('*')">*</button></div>
+
+            <div class="um"><button onclick="adicionar('1')">1</button></div>
+            <div class="dois"><button onclick="adicionar('2')">2</button></div>
+            <div class="tres"><button onclick="adicionar('3')">3</button></div>
+            <div class="subtracao"><button onclick="adicionar('-')">-</button></div>
+
+            <div class="zero"><button onclick="adicionar('0')">0</button></div>
+            <div class="limpar"><button onclick="limpar()">C</button></div>
+            <div class="igual"><button onclick="calcular()">=</button></div>
+            <div class="soma"><button onclick="adicionar('+')">+</button></div>
+        </div>
+    </div>
+</body>
+</html>
